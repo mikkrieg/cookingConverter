@@ -18,28 +18,35 @@ function ouncesToPounds(ounces) {
   return result
 }
 
+$(document).ready(function(){
+  
+  $("form#cupForm").submit(function(e){
+    e.preventDefault();
+    const input = $("input#cups").val();
+    const output = cupsToLiters(input).toFixed(2);
+    $("div#liter-output").text(output);
+  });
+  
+  $("form#literForm").submit(function(e){
+    e.preventDefault();
+    const input = $("input#liters").val();
+    const output = litersToGallons(input).toFixed(2);
+    $("div#gallon-output").text(output);
+  });
 
+  $("form#gramForm").submit(function(e){
+    e.preventDefault();
+    const input = $("input#grams").val();
+    const output = gramsToOunces(input).toFixed(2);
+    $("div#ounce-output").text(output);
+  });
 
-
-
-
-
-$(document).ready(function() {
-  $("")
-
-
-
-
-
-
-
-
-
+  $("form#ounceForm").submit(function(e){
+    e.preventDefault();
+    const input = $("input#ounces").val();
+    const output = ouncesToPounds(input).toFixed(2);
+    $("div#pound-output").text(output);
+  });
 });
 
-
-
-// function volumeConversion(number1) {
-//   return number1 * 3.785;
-// }
 
