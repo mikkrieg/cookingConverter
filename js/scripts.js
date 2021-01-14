@@ -1,7 +1,19 @@
-function volumeConversion(number1) {
-  return number1 * 3.785;
-}
+$(document).ready(function() {
+  $()
 
-const result = volumeConversion(5);
 
-alert(result);
+
+
+
+
+
+
+
+});
+
+
+
+// function volumeConversion(number1) {
+//   return number1 * 3.785;
+// }
+

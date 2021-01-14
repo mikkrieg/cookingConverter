@@ -2,10 +2,146 @@
 <html lang="en-us">
   <head>
     <title>Cooking Conversion</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type='text/css'>
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Converter</h1>
-    
+    <div class="container">
+      <h1>Converter</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title">
+              <h2>cups to liters</h2>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <label>
+                        <input id="cups" class="form-control" type="number">
+                        Enter cups here:
+                      </label>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Liters:</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="output-div" id="liter-output">
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-info">Calculate!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title">
+              <h2>liters to gallons</h2>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <label>
+                        <input id="liters" class="form-control" type="number">
+                        Enter liters here:
+                      </label>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Gallons:</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div  class="output-div" id="gallon-output">
+      
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-info">Calculate!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title">
+              <h2>grams to ounces</h2>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <label>
+                        <input id="grams" class="form-control" type="number";>
+                        Enter grams here:
+                      </label>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Ounces:</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="output-div" id="ounce-output">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-info">Calculate!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title">
+              <h2>ounces to pounds</h2>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <label>
+                        <input id="ounces" class="form-control" type="number">
+                        Enter ounces here:
+                      </label>
+                    </form>
+                  </div>
+                  <div class="col-md-3">
+                    <h3>Pounds:</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="output-div" id="pound-output">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="submit" class="btn btn-info">Calculate!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
